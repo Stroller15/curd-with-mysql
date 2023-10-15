@@ -7,8 +7,6 @@ import Update from "./components/Update/Update";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
 } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -21,7 +19,7 @@ const router = createBrowserRouter([
     element: <Add/>,
   },
   {
-    path: "/update",
+    path: "/update/:id",
     element: <Update/>,
   },
   
